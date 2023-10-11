@@ -1,0 +1,19 @@
+.btn
+    text-decoration: none
+    background-color: $color-green-light
+    color: white
+    padding: 1rem 2.5rem
+    font-size: 2rem
+    transition: all .35s
+    position: relative
+    border: none
+
+    &:hover
+        transform: translateY(-.04rem)
+        box-shadow: $box-shadow
+    &::after
+        transform: scaleX(1.6) scaleY(1.7)
+        opacity: 0
+    &:active
+        transform: translateY(-.02rem)
+        box-shadow: $box-shadow

@@ -1,0 +1,37 @@
+.header
+    background-color: $color-blue-dark
+    grid-column: full-start / col-end 6
+    background-image: url('./../icons/header-bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    padding: 8rem
+    
+    display: grid
+    grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr
+    &__logo
+        justify-self: center
+    &__line-text
+        font-size: 1.6rem
+        font-weight: 700
+        color: #777
+        display: grid
+        grid-template-columns: 1fr minmax(min-content, max-content) 1fr
+        grid-column-gap: 2rem
+        align-items: center
+        &::before, &::after
+            content: ''
+            height: .2rem
+            background-color: $color-gray-dark
+
+
+    &__img img
+        height: 2.5rem
+
+    &__img
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        justify-items: center
+    &__btn
+        align-self: start
+        justify-self: start
